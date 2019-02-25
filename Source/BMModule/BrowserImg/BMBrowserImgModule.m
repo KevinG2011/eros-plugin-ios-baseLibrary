@@ -114,12 +114,12 @@ WX_EXPORT_METHOD(@selector(close))
     
     [imageView sd_setImageWithURL:[NSURL URLWithString:url]
                  placeholderImage:placeholder
-                          options:0 progress:^(NSInteger receivedSize, NSInteger expectedSize) {
+                          options:0 progress:^(NSInteger receivedSize, NSInteger expectedSize, NSURL * _Nullable targetURL) {
                               if (progressHandler)
                               {
                                   progressHandler(receivedSize,expectedSize);
                               }
-                          } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+                          } completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
                               
                           }];
 }

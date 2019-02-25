@@ -1,30 +1,31 @@
 # coding: utf-8
 Pod::Spec.new do |s|
   s.name         = "ErosPluginBaseLibrary"
-  s.version      = "1.3.4"
+  s.version      = "1.3.5"
   s.summary      = "WeexEros iOS App base library"
   s.description  = <<-DESC
                    WeexEros iOS App base library
                    DESC
 
-  s.homepage     = "https://github.com/bmfe/eros-plugin-ios-baseLibrary"
+  s.homepage     = "https://github.com/KevinG2011/eros-plugin-ios-baseLibrary"
   s.license      = "MIT"
-  s.author       = { "xionghuayu" => "18601949015@163.com" }
+  s.author       = { "lijia" => "lijia@huajiao.tv" }
 
   s.platform     = :ios, "8.0"
   s.ios.deployment_target = "8.0"
-  s.source       = { :git => "https://github.com/bmfe/eros-plugin-ios-baseLibrary.git", :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/KevinG2011/eros-plugin-ios-baseLibrary.git", :tag => s.version.to_s }
   s.requires_arc = true
   
   s.dependency 'YYText', '1.0.7'
-  s.dependency 'Masonry', '1.1.0'
+  s.dependency 'Masonry', '1.0.1'
   s.dependency 'YYModel', '1.0.4'
-  s.dependency 'SSZipArchive', '1.6.2'
+  s.dependency 'SSZipArchive', '2.1.3'
   s.dependency 'YTKNetwork', '2.0.3'
   s.dependency 'SocketRocket', '0.4.2'
-  s.dependency 'SDWebImage', '3.7.6'
-  s.dependency 'MJRefresh', '3.1.12'
+  s.dependency 'SDWebImage/WebP', '4.4.2'
+  s.dependency 'MJRefresh', '3.1.0'
   s.dependency 'CTMediator', '13'
+  s.dependency 'SVProgressHUD', '2.2.5'
 
   #Device信息非ARC
   s.subspec 'BMDevice' do |ss|
